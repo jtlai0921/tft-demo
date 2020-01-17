@@ -1,0 +1,18 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\tft.o"
+".\objects\font16.o"
+".\HID.lib"
+".\objects\img.o"
+".\objects\clk.o"
+".\objects\ebi.o"
+".\objects\gpio.o"
+".\objects\sys.o"
+".\objects\uart.o"
+".\objects\usbd.o"
+".\objects\retarget.o"
+".\objects\startup_nano100series.o"
+".\objects\system_nano100series.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\LAB_EBI.map" -o .\Objects\LAB_EBI.axf

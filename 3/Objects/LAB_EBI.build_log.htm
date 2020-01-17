@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: s ASUS, sssss, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.16.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.2
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ASUS\Desktop\tft demo\3\LAB_EBI.uvprojx
+Project File Date:  09/17/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LAB_EBI'
+compiling font16.c...
+compiling sys.c...
+compiling gpio.c...
+compiling ebi.c...
+compiling main.c...
+compiling tft.c...
+tft.c(301): warning:  #174-D: expression has no effect
+  	for(int i=129,j=290; i<140,j<310; j++,i++)
+tft.c(305): warning:  #174-D: expression has no effect
+  	for(int i=129,j=290; i<140,j>270; j--,i++)
+tft.c(315): warning:  #1-D: last line of file ends without a newline
+  	
+tft.c: 3 warnings, 0 errors
+compiling clk.c...
+assembling startup_Nano100Series.s...
+compiling uart.c...
+compiling retarget.c...
+compiling system_Nano100Series.c...
+compiling usbd.c...
+linking...
+Program Size: Code=8588 RO-data=280 RW-data=336 ZI-data=2720  
+After Build - User command #1: fromelf --bin ".\Objects\LAB_EBI.axf" --output ".\LAB_EBI.bin"
+".\Objects\LAB_EBI.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+Package Vendor: Nuvoton
+                http://www.nuvoton.com/hq/enu/Documents/KEILSoftwarePack/Nuvoton.NuMicro_DFP.1.0.7.pack
+                Nuvoton::Device:Driver:SYS:3.01.000
+                Nuvoton ARM Cortex-M NuMicro Family Device Support
+   * Component: SYS Version: 3.01.000
+   * Component: UART Version: 3.01.000
+   * Component: CLK Version: 3.01.000
+   * Component: GPIO Version: 3.01.000
+   * Component: EBI Version: 3.01.000
+   * Component: Startup Version: 3.01.000
+   * Component: USB Version: 3.01.000
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\ASUS\Desktop\tft demo\3\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Driver
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+
+   * Component: Nuvoton::Device:Driver:SYS:3.01.000
+      Include file:  Device\NANO100BN\Driver\sys.h
+      Source file:   Device\NANO100BN\Driver\sys.c
+
+   * Component: Nuvoton::Device:Driver:UART:3.01.000
+      Source file:   Device\NANO100BN\Driver\uart.c
+      Include file:  Device\NANO100BN\Driver\uart.h
+
+   * Component: Nuvoton::Device:Driver:CLK:3.01.000
+      Source file:   Device\NANO100BN\Driver\clk.c
+      Include file:  Device\NANO100BN\Driver\clk.h
+
+   * Component: Nuvoton::Device:Driver:GPIO:3.01.000
+      Include file:  Device\NANO100BN\Driver\gpio.h
+      Source file:   Device\NANO100BN\Driver\gpio.c
+
+   * Component: Nuvoton::Device:Driver:EBI:3.01.000
+      Include file:  Device\NANO100BN\Driver\ebi.h
+      Source file:   Device\NANO100BN\Driver\ebi.c
+
+   * Component: Nuvoton::Device:Startup:3.01.000
+      Source file:   Device\NANO100BN\Source\system_Nano100Series.c
+      Source file:   Device\NANO100BN\Driver\retarget.c
+      Source file:   Device\NANO100BN\Source\ARM\startup_Nano100Series.s
+      Include file:  Device\NANO100BN\Include\Nano100Series.h
+
+   * Component: Nuvoton::Device:Driver:USB:3.01.000
+      Include file:  Device\NANO100BN\Driver\usbd.h
+      Source file:   Device\NANO100BN\Driver\usbd.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

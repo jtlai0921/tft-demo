@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: s ASUS, sssss, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.16.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.2
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ASUS\Desktop\tft demo\3 - ½Æ»s\LAB_EBI.uvprojx
+Project File Date:  10/17/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LAB_EBI'
+compiling aaaa.c...
+aaaa.c(104): warning:  #1-D: last line of file ends without a newline
+  };
+aaaa.c: 1 warning, 0 errors
+compiling font16.c...
+compiling ebi.c...
+compiling gpio.c...
+compiling main.c...
+compiling tft.c...
+tft.c(243): warning:  #174-D: expression has no effect
+  for(int i=0x1100,j=0; i<0xaa1f,j<200; j++,i++){
+tft.c(331): warning:  #174-D: expression has no effect
+  	for(int i=129,j=290; i<140,j<310; j++,i++)
+tft.c(335): warning:  #174-D: expression has no effect
+  	for(int i=129,j=290; i<140,j>270; j--,i++)
+tft.c(339): warning:  #174-D: expression has no effect
+  	for(int i=160,j=310; i<170,j>290; j--,i++)
+tft.c(343): warning:  #174-D: expression has no effect
+  	for(int i=200,j=310; i>180,j>270; j--,i--)
+tft.c(401): warning:  #174-D: expression has no effect
+  	for(int i=129,j=190; i<140,j<210; j++,i++)
+tft.c(405): warning:  #174-D: expression has no effect
+  	for(int i=129,j=190; i<140,j>170; j--,i++)
+tft.c(409): warning:  #174-D: expression has no effect
+  for(int i=160,j=210; i<170,j>190; j--,i++)
+tft.c(413): warning:  #174-D: expression has no effect
+  	for(int i=200,j=210; i>180,j>170; j--,i--)
+tft.c(421): warning:  #1-D: last line of file ends without a newline
+  }	
+tft.c: 10 warnings, 0 errors
+compiling clk.c...
+assembling startup_Nano100Series.s...
+compiling sys.c...
+compiling uart.c...
+compiling retarget.c...
+compiling usbd.c...
+compiling system_Nano100Series.c...
+linking...
+Program Size: Code=9140 RO-data=2840 RW-data=336 ZI-data=1344  
+After Build - User command #1: fromelf --bin ".\Objects\LAB_EBI.axf" --output ".\LAB_EBI.bin"
+".\Objects\LAB_EBI.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+Package Vendor: Nuvoton
+                http://www.nuvoton.com/hq/enu/Documents/KEILSoftwarePack/Nuvoton.NuMicro_DFP.1.0.7.pack
+                Nuvoton::Device:Driver:GPIO:3.01.000
+                Nuvoton ARM Cortex-M NuMicro Family Device Support
+   * Component: GPIO Version: 3.01.000
+   * Component: EBI Version: 3.01.000
+   * Component: SYS Version: 3.01.000
+   * Component: CLK Version: 3.01.000
+   * Component: UART Version: 3.01.000
+   * Component: Startup Version: 3.01.000
+   * Component: USB Version: 3.01.000
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\ASUS\Desktop\tft demo\3 - ½Æ»s\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Driver
+  C:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.7\Device\NANO100BN\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+
+   * Component: Nuvoton::Device:Driver:GPIO:3.01.000
+      Include file:  Device\NANO100BN\Driver\gpio.h
+      Source file:   Device\NANO100BN\Driver\gpio.c
+
+   * Component: Nuvoton::Device:Driver:EBI:3.01.000
+      Source file:   Device\NANO100BN\Driver\ebi.c
+      Include file:  Device\NANO100BN\Driver\ebi.h
+
+   * Component: Nuvoton::Device:Driver:SYS:3.01.000
+      Include file:  Device\NANO100BN\Driver\sys.h
+      Source file:   Device\NANO100BN\Driver\sys.c
+
+   * Component: Nuvoton::Device:Driver:CLK:3.01.000
+      Source file:   Device\NANO100BN\Driver\clk.c
+      Include file:  Device\NANO100BN\Driver\clk.h
+
+   * Component: Nuvoton::Device:Driver:UART:3.01.000
+      Source file:   Device\NANO100BN\Driver\uart.c
+      Include file:  Device\NANO100BN\Driver\uart.h
+
+   * Component: Nuvoton::Device:Startup:3.01.000
+      Source file:   Device\NANO100BN\Driver\retarget.c
+      Include file:  Device\NANO100BN\Include\Nano100Series.h
+      Source file:   Device\NANO100BN\Source\system_Nano100Series.c
+      Source file:   Device\NANO100BN\Source\ARM\startup_Nano100Series.s
+
+   * Component: Nuvoton::Device:Driver:USB:3.01.000
+      Source file:   Device\NANO100BN\Driver\usbd.c
+      Include file:  Device\NANO100BN\Driver\usbd.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
